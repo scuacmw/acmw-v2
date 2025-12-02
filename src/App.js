@@ -4,6 +4,7 @@ import Home from './pages/Home';
 import Board from './pages/Board';
 import Events from './pages/Events';
 import Newsletter from './pages/Newsletter';
+import Resources from './pages/resources';
 import H4H from './pages/H4H';
 import Navbar from './components/Navbar'; 
 
@@ -18,6 +19,7 @@ function App() {
           <Route path="/board" element={<Board />} />
           <Route path="/events" element={<Events />} />
           <Route path="/newsletter" element={<Newsletter />} />
+          <Route path="/resources" element={<Resources />} />
           <Route path="/h4h" element={<H4H/>} />
         </Routes>
       </div>

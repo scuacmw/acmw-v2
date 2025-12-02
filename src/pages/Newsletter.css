@@ -5,17 +5,42 @@
 
 .laptop {
   background-color: #5F4B8B; 
-  border-radius: 16px;
+  border-radius: 20px;
   padding: 4rem 2rem;
-  
   max-width: 700px;
-  max-height: 500px;
+  max-height: 600px;
   margin: 16rem auto 2rem;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
-
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: box-shadow 0.3s ease;
+}
+
+.laptop:hover {
+  box-shadow: 0 8px 24px rgba(95, 75, 139, 0.25);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .laptop {
+        margin: 12rem auto 2rem;
+        padding: 2rem 1.5rem;
+        max-width: 90%;
+    }
+    
+    #mc_embed_signup {
+        padding: 1.5rem;
+    }
+    
+    #mc_embed_signup h2 {
+        font-size: 24px;
+    }
+    
+    .button {
+        width: 100%;
+        padding: 14px 24px;
+    }
 }
 
 
@@ -29,17 +54,26 @@
 }
 
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@500&display=swap');
+
 #mc_embed_signup {
   background: #f9f9f9;
   padding: 2rem;
   border-radius: 12px;
   max-width: 500px;
   width: 100%; 
-  font-family: 'Arial', sans-serif;
-
+  font-family: 'Montserrat Alternates', sans-serif;
   text-align: center;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  margin: 0; 
+  margin: 0;
+}
+
+#mc_embed_signup h2 {
+  font-family: 'Montserrat Alternates', sans-serif;
+  color: #5F4B8B;
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
 }
 
 
@@ -47,27 +81,51 @@
   margin-bottom: 1.5rem;
 }
 
+.mc-field-group label {
+  font-family: 'Montserrat Alternates', sans-serif;
+  color: #5F4B8B;
+  font-size: 16px;
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
 input[type="email"] {
   width: 100%;
   padding: 12px;
   border-radius: 6px;
-  border: 1px solid #ccc;
+  border: 2px solid #CCCCFF;
   font-size: 1rem;
+  font-family: 'Montserrat Alternates', sans-serif;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  box-sizing: border-box;
+}
+
+input[type="email"]:focus {
+  outline: none;
+  border-color: #5F4B8B;
+  box-shadow: 0 0 0 3px rgba(95, 75, 139, 0.1);
 }
 
 .button {
-  background-color: #7c3aed;
+  background-color: #5F4B8B;
   color: white;
-  border: none;
-  padding: 12px 24px;
-  border-radius: 8px;
+  border: 3px solid #5F4B8B;
+  padding: 12px 32px;
+  border-radius: 30px;
   cursor: pointer;
   font-size: 1rem;
-  transition: background-color 0.2s ease;
+  font-family: 'Montserrat Alternates', sans-serif;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 .button:hover {
-  background-color: #5b21b6;
+  background-color: #6F5B9B;
+  border-color: #FF66B2;
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(255, 102, 178, 0.3);
 }
 
 
