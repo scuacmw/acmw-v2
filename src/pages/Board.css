@@ -116,6 +116,22 @@
     font-weight: 500;
 }
 
+.board-section {
+    margin-top: 60px;
+    width: 100%;
+    max-width: 1400px;
+    padding: 0 20px;
+}
+
+.board-section-title {
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #5F4B8B;
+    text-align: center;
+    margin: 0 0 30px;
+}
+
 /* Responsive Design */
 @media (max-width: 1024px) {
     .members-container {
@@ -153,6 +169,10 @@
     }
     
     .board-title {
+        font-size: 1.8rem;
+    }
+    
+    .board-section-title {
         font-size: 1.8rem;
     }
     

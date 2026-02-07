@@ -1,5 +1,8 @@
 import React from 'react';
-import './Events.css'
+import './Events.css';
+
+// Replace with your Google Calendar subscription link (e.g. iCal or "Add to Google Calendar" URL)
+const ADD_TO_GCAL_LINK = 'https://calendar.google.com/calendar/u/1?cid=YWNtdy5zY3VnaXJsc0BnbWFpbC5jb20';
 
 const Events = () => {
   return (
@@ -11,7 +14,15 @@ const Events = () => {
       minHeight: '100vh',
       paddingTop: '100px'  
     }}>
-      <h1 className ="title">Check Out Our Events!</h1>
+      <h1 className="title">Check Out Our Events!</h1>
+      <a
+        href={ADD_TO_GCAL_LINK}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="add-to-gcal-btn"
+      >
+        Add our events to your Google Calendar
+      </a>
       <div style={{ 
         display: 'flex', 
         justifyContent: 'center', 

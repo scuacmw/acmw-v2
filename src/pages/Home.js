@@ -1,6 +1,6 @@
 import './Home.css'; // Make sure you have a corresponding CSS file
 import image1 from '../assets/text.png';
-import image2 from '../assets/Group 19 (1).png';
+import image2 from '../assets/boardpic.png';
 import image3 from '../assets/h4hPhoto1.jpg';
 import image4 from '../assets/groupPic1.jpeg';
 import image5 from '../assets/acmAcmwPhoto.jpeg';
@@ -39,7 +39,9 @@ const Home = () => {
             <img src={image1} alt="text" className="image1" />
           </div>
           <div className="rightcontainer">
-            <img src={image2} alt="rightpic" className="image2" />
+            <div className="diamond-bg">
+              <img src={image2} alt="Board" className="image2" />
+            </div>
           </div>  
         </div>
       </header>
@@ -82,16 +84,7 @@ const Home = () => {
       <p>ACM is our brother organization at SCU. While we dedicate ourselves to the advancement of women in computer science, we welcome all to our club. You should feel welcome at ACM's events as well! We love to see our members interact with both clubs.</p>
     </div>
 
-
-
-   
-
   </div>
-
- 
-
-
-
   </div>
      
   );

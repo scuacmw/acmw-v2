@@ -2,45 +2,107 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@500&display=swap');
 
 nav {
-    position: fixed; 
+    position: fixed;
     top: 0;
+    left: 0;
+    right: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;   
+    width: 100%;
+    max-width: 100vw;
     height: 75px;
     z-index: 1000;
     background-color: #CCCCFF;
-    padding: 1rem;
-  }
-  .logo {
+    padding: 0 1.5rem;
+    box-sizing: border-box;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+    border-radius: 0 0 12px 12px;
+}
+
+.logo {
     width: 150px;
+    min-width: 80px;
     height: auto;
-  }
-  
-  nav ul {
+    flex-shrink: 0;
+}
+
+nav ul {
     list-style-type: none;
     display: flex;
     justify-content: flex-end;
-    margin-right: 8%; 
-    gap: 50px;
-    padding: 10px;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.25rem;
+    padding: 0.5rem 0;
+    margin: 0;
+    flex-shrink: 1;
+    min-width: 0;
+}
 
-   
-  }
-  
-  nav ul li {
+nav ul li {
     display: inline;
-  }
-  
-  nav ul li a {
+}
+
+nav ul li a {
     color: black;
     text-decoration: none;
     font-size: 15px;
     font-family: 'Montserrat Alternates', sans-serif;
-  }
-  
-  nav ul li a:hover {
+    padding: 0.35rem 0.6rem;
+    border-radius: 8px;
+    letter-spacing: 0.02em;
+    transition: background-color 0.2s ease, color 0.2s ease;
+    white-space: nowrap;
+}
+
+nav ul li a:hover {
     color: #FF66B2;
-  }
-  
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+@media (max-width: 1024px) {
+    nav {
+        padding: 0 1.25rem;
+    }
+    nav ul {
+        gap: 0.75rem;
+    }
+    nav ul li a {
+        padding: 0.3rem 0.5rem;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 768px) {
+    nav {
+        padding: 0 0.75rem;
+    }
+    .logo {
+        width: 120px;
+    }
+    nav ul {
+        gap: 0.4rem;
+        padding: 0.35rem 0;
+    }
+    nav ul li a {
+        padding: 0.25rem 0.4rem;
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 480px) {
+    nav {
+        padding: 0 0.5rem;
+    }
+    .logo {
+        width: 100px;
+    }
+    nav ul {
+        gap: 0.25rem;
+    }
+    nav ul li a {
+        padding: 0.2rem 0.3rem;
+        font-size: 12px;
+    }
+}
