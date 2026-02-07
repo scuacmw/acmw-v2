@@ -48,7 +48,6 @@ const Home = () => {
         <h1>Learn More</h1>
         <div className="icons">
           <div className="eventsbutton" onClick={() => scrollToSection(eventsRef)}>Upcoming Events</div>
-          <div className="updatesbutton" onClick={() => scrollToSection(updatesRef)}>Updates on ACM-W</div>
           <div className="aboutbutton" onClick={() => scrollToSection(aboutUsRef)}>About ACM-W</div>
         </div>
       </div>

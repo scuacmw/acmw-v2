@@ -14,6 +14,8 @@ import image16 from '../assets/Catherine_Hung.jpeg'; // treasurer
 import image18 from '../assets/Paulina_Landry.JPEG'; //IL 1
 import image19 from '../assets/Emaan_Zaidi.JPG'; //IL 2
 import image20 from '../assets/meettheboardbanner.png';
+import image21 from '../assets/Laila_Heigre.jpg';
+import image22 from '../assets/Priyanka_Burra.jpg';
 
 
 const boardMembers = [
@@ -22,14 +24,16 @@ const boardMembers = [
   { name: 'Gina Chiu', role: 'Director of Media and PR', image: image8 },
   { name: 'Priyanka Ganguly', role: 'Secretary', image: image15 },
   { name: 'Kaavya Jethwa', role: 'Web-Master', image: image12 },
-  { name: 'Anna Aldrin', role: 'Co-Director of Events', image: image11 },
-  { name: 'Sara Donnelly', role: 'Co-Director of Events', image: image10 },
+  { name: 'Anna Aldrin', role: 'Director of Events', image: image11 },
+  { name: 'Sara Donnelly', role: 'Events Coordinator', image: image10 },
   { name: 'Catherine Hung', role: 'Treasurer', image: image16 },
   { name: 'Tanvi Gandhi', role: 'Career and Conference Advisor', image: image14 },
   { name: 'Sanjna Sood', role: 'Hack-a-thon Coordinator', image: image9 },
   { name: 'Emaan Zaidi', role: 'Industry Liaison', image: image19 },
-  { name: 'Daniela Casillas', role: 'Industry Liaison', image: image13 },
-  { name: 'Paulina Landry', role: 'Industry Liaison', image: image18 }
+  { name: 'Daniela Casillas', role: 'Cybersisters Coordinator', image: image13 },
+  { name: 'Paulina Landry', role: 'Industry Liaison', image: image18 },
+  { name: 'Priyanka Burra', role: "Freshman Representative", image: image22 },
+  { name: 'Laila Heigre', role: "Freshman Representative", image: image21 }
 ];
 
 const Board = () => {
@@ -38,7 +42,7 @@ const Board = () => {
       <div className="banner">
         <img src={image20} alt="Board banner" className="banner-image" />
         <div className="banner-title">
-          <h1 className="board-title">2024-2025</h1>
+          <h1 className="board-title">2025-2026</h1>
         </div>
       </div>
       
