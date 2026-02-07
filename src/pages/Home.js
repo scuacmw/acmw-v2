@@ -11,7 +11,7 @@ import React, { useRef } from 'react';
 
 const Home = () => {
   const eventsRef = useRef(null);
-  const updatesRef = useRef(null);
+  //const updatesRef = useRef(null);
   const aboutUsRef = useRef(null);
 
   // Scroll function to target section
