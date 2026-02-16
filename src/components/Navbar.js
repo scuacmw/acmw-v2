@@ -13,6 +13,7 @@ const Navbar = () => {
         <li><Link to="/">Home</Link></li>
         <li><Link to="/board">Board</Link></li>
         <li><Link to="/events">Events</Link></li>
+        <li><Link to="/resources">Resources</Link></li>
         <li><Link to="/newsletter">Newsletter</Link></li>
         <li>
           <a href="https://hackforhumanity.io/" target="_blank" rel="noopener noreferrer">H4H</a>

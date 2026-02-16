@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@500&display=swap');
+
+.resources-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  background-color: white;
+  padding-top: 100px;
+  padding-bottom: 60px;
+  box-sizing: border-box;
+}
+
+.resources-banner {
+  width: 90%;
+  max-width: 1200px;
+  padding: 24px 20px;
+  margin: 0 auto 32px;
+  background-color: #E6F2FB;
+  border-radius: 30px;
+  text-align: center;
+}
+
+.resources-banner-title {
+  margin: 0;
+  font-family: 'Montserrat Alternates', sans-serif;
+  font-size: 40px;
+  font-weight: bold;
+  color: #5F4B8B;
+}
+
+.resources-content {
+  width: 90%;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.workshop-section {
+  padding: 32px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.workshop-section:last-child {
+  border-bottom: none;
+}
+
+.workshop-title {
+  margin: 0 0 12px;
+  font-family: 'Montserrat Alternates', sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  color: #5F4B8B;
+}
+
+.workshop-description {
+  margin: 0 0 24px;
+  font-family: 'Montserrat Alternates', sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+}
+
+.workshop-embeds {
+  display: grid;
+  gap: 24px;
+  align-items: start;
+}
+
+.workshop-embeds-1 {
+  display: flex;
+  justify-content: center;
+}
+
+.workshop-embeds-1 .embed-box {
+  max-width: 560px;
+  width: 100%;
+}
+
+.workshop-embeds-2 {
+  grid-template-columns: 1fr 1fr;
+}
+
+.workshop-embeds-3 {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.embed-box {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  min-height: 0;
+  border-radius: 6px;
+  overflow: hidden;
+  background-color: #f9f9f9;
+  border: 1px solid #e8e8e8;
+}
+
+
+.embed-box iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.embed-placeholder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 180px;
+  padding: 20px;
+  color: #5F4B8B;
+  font-family: 'Montserrat Alternates', sans-serif;
+  text-align: center;
+}
+
+.embed-placeholder p {
+  margin: 0 0 8px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.embed-placeholder span {
+  font-size: 14px;
+  color: #666;
+}
+
+.embed-box.embed-image-link {
+  display: flex;
+  flex-direction: column;
+  aspect-ratio: 16 / 9;
+  min-height: 0;
+}
+
+.embed-box.embed-image-link .workshop-image {
+  width: 100%;
+  flex: 1;
+  min-height: 0;
+  object-fit: contain;
+  border-radius: 6px 6px 0 0;
+}
+
+.embed-box.embed-image-link .embed-placeholder {
+  flex: 1;
+  min-height: 0;
+  border-radius: 6px 6px 0 0;
+}
+
+.workshop-image-link,
+.workshop-image-link-placeholder {
+  flex-shrink: 0;
+  padding: 10px 16px;
+  text-align: center;
+  font-family: 'Montserrat Alternates', sans-serif;
+  border-top: 1px solid #e8e8e8;
+}
+
+.workshop-image-link {
+  color: #5F4B8B;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.2s ease;
+  word-break: break-all;
+  font-size: 14px;
+}
+
+.workshop-image-link:hover {
+  color: #FF66B2;
+}
+
+.workshop-image-link-placeholder {
+  font-size: 14px;
+  color: #999;
+}
+
+@media (max-width: 768px) {
+  .resources-page {
+    padding-top: 90px;
+  }
+
+  .resources-banner-title {
+    font-size: 28px;
+  }
+
+  .workshop-section {
+    padding: 24px 0;
+  }
+
+  .workshop-title {
+    font-size: 20px;
+  }
+
+  .workshop-description {
+    font-size: 15px;
+  }
+
+  .workshop-embeds,
+  .workshop-embeds-1,
+  .workshop-embeds-2,
+  .workshop-embeds-3 {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .embed-placeholder {
+    min-height: 100px;
+  }
+}
