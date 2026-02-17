@@ -57,7 +57,7 @@ const Home = () => {
       <div ref={eventsRef} className="upcomingeventbox">
         <h1>UPCOMING EVENTS</h1>
         <div className="info">
-          <p>Cybersisters Workshop</p>
+          <p>Recruitment Workshop</p>
           <p>Wednesday, Feb 18</p>
           <p>Location: SCDI 1301</p>
         </div>
