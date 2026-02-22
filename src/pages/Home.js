@@ -4,7 +4,7 @@ import image2 from '../assets/boardpic.png';
 import image3 from '../assets/h4hPhoto1.jpg';
 import image4 from '../assets/groupPic1.jpeg';
 import image5 from '../assets/acmAcmwPhoto.jpeg';
-import image6 from '../assets/Recruitmentworkshop.png';
+import image6 from '../assets/AMDWorkshop.png';
 import React, { useRef } from 'react';
 
 
@@ -57,8 +57,8 @@ const Home = () => {
       <div ref={eventsRef} className="upcomingeventbox">
         <h1>UPCOMING EVENTS</h1>
         <div className="info">
-          <p>Recruitment Workshop</p>
-          <p>Wednesday, Feb 18</p>
+          <p>AMD Workshop</p>
+          <p>Wednesday, Feb 25</p>
           <p>Location: SCDI 1301</p>
         </div>
         <img src={image6} alt="upcoming event" className="upcomingimage" />
