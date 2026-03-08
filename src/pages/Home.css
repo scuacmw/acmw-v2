@@ -161,7 +161,8 @@ body {
 
 .eventsbutton,
 .updatesbutton,
-.aboutbutton {
+.aboutbutton,
+.gcalbutton {
   width: 207px;
   height: 56px;
   background-color: #5F4B8B;
@@ -181,11 +182,16 @@ body {
 
 .eventsbutton:hover,
 .updatesbutton:hover,
-.aboutbutton:hover {
+.aboutbutton:hover,
+.gcalbutton:hover {
   transform: scale(1.05);        
   border-color: #FF66B2;
   box-shadow: 0 4px 12px rgba(255, 102, 178, 0.3);
   background-color: #6F5B9B;
+}
+
+.gcalbutton {
+  text-decoration: none;
 }
 
 
@@ -514,7 +520,8 @@ body {
   
   .eventsbutton,
   .updatesbutton,
-  .aboutbutton {
+  .aboutbutton,
+  .gcalbutton {
     width: 100%;
     max-width: 300px;
   }
@@ -620,7 +627,8 @@ body {
 
   .eventsbutton,
   .updatesbutton,
-  .aboutbutton {
+  .aboutbutton,
+  .gcalbutton {
     height: 48px;
     font-size: 14px;
   }

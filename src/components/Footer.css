@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@500&display=swap');
+
+.footer {
+  margin-top: auto;
+  padding: 1.5rem 1.5rem;
+  background-color: #5F4B8B;
+  color: white;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.footer-text {
+  font-family: 'Montserrat Alternates', sans-serif;
+  font-size: 14px;
+}
+
+.footer-links {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.footer-links a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.footer-links a:hover {
+  color: #FF66B2;
+}
+
+.footer-links a svg {
+  width: 28px;
+  height: 28px;
+}
+
+@media (max-width: 480px) {
+  .footer {
+    padding: 1.25rem 1rem;
+  }
+
+  .footer-content {
+    flex-direction: column;
+  }
+
+  .footer-links {
+    gap: 1.25rem;
+  }
+}

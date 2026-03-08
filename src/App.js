@@ -6,22 +6,25 @@ import Events from './pages/Events';
 import Resources from './pages/Resources';
 import Newsletter from './pages/Newsletter';
 import H4H from './pages/H4H';
-import Navbar from './components/Navbar'; 
+import Navbar from './components/Navbar';
+import Footer from './components/Footer';
 
 function App() {
   return (
     <Router>
-      <div>
-        {/* Define routes for each page */}
+      <div className="app-wrapper">
         <Navbar />
-        <Routes>
+        <main className="app-main">
+          <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/board" element={<Board />} />
           <Route path="/events" element={<Events />} />
           <Route path="/resources" element={<Resources />} />
           <Route path="/newsletter" element={<Newsletter />} />
           <Route path="/h4h" element={<H4H/>} />
-        </Routes>
+          </Routes>
+        </main>
+        <Footer />
       </div>
     </Router>
   );

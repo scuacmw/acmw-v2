@@ -1,4 +1,4 @@
-import './Home.css'; // Make sure you have a corresponding CSS file
+import './Home.css';
 import image1 from '../assets/text.png';
 import image2 from '../assets/boardpic.png';
 import image3 from '../assets/h4hPhoto1.jpg';
@@ -6,6 +6,8 @@ import image4 from '../assets/groupPic1.jpeg';
 import image5 from '../assets/acmAcmwPhoto.jpeg';
 import image6 from '../assets/AMDWorkshop.png';
 import React, { useRef } from 'react';
+
+const ADD_TO_GCAL_LINK = 'https://calendar.google.com/calendar/u/1?cid=YWNtdy5zY3VnaXJsc0BnbWFpbC5jb20';
 
 
 
@@ -51,6 +53,14 @@ const Home = () => {
         <div className="icons">
           <div className="eventsbutton" onClick={() => scrollToSection(eventsRef)}>Upcoming Events</div>
           <div className="aboutbutton" onClick={() => scrollToSection(aboutUsRef)}>About ACM-W</div>
+          <a
+            href={ADD_TO_GCAL_LINK}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="gcalbutton"
+          >
+            Add to Google Calendar
+          </a>
         </div>
       </div>
 
