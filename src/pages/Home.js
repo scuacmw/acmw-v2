@@ -4,7 +4,7 @@ import image2 from '../assets/boardpic.png';
 import image3 from '../assets/h4hPhoto1.jpg';
 import image4 from '../assets/groupPic1.jpeg';
 import image5 from '../assets/acmAcmwPhoto.jpeg';
-import image6 from '../assets/AMDWorkshop.png';
+import image6 from '../assets/Paintingsocial.png';
 import React, { useRef } from 'react';
 
 const ADD_TO_GCAL_LINK = 'https://calendar.google.com/calendar/u/1?cid=YWNtdy5zY3VnaXJsc0BnbWFpbC5jb20';
@@ -67,9 +67,9 @@ const Home = () => {
       <div ref={eventsRef} className="upcomingeventbox">
         <h1>UPCOMING EVENTS</h1>
         <div className="info">
-          <p>AMD Workshop</p>
-          <p>Wednesday, Feb 25</p>
-          <p>Location: SCDI 1301</p>
+          <p>Painting Social</p>
+          <p>Wednesday, March 11th</p>
+          <p>Location: Mission Gardens</p>
         </div>
         <img src={image6} alt="upcoming event" className="upcomingimage" />
       </div>
