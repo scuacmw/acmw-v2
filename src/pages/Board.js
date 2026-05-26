@@ -16,21 +16,17 @@ import image19 from '../assets/emaan.jpg'; //IL 2
 import image20 from '../assets/meettheboardbanner.png';
 import image21 from '../assets/Laila_Heigre.jpg';
 import image22 from '../assets/Priyanka_Burra.jpg';
-import image23 from '../assets/jake.jpg';
-import image24 from '../assets/anish.jpg';
-import image25 from '../assets/abhi.jpg';
-import image26 from '../assets/ivy.jpg';
-import image27 from '../assets/lindsey.jpg';
-import image28 from '../assets/chris.jpg';
-import image29 from '../assets/marg.jpg';
-import image30 from '../assets/carys.jpg';
-import image31 from '../assets/alan.jpg';
-import image32 from '../assets/tiffany.jpg';
-import image33 from '../assets/rayyan.jpg';
-import image34 from '../assets/matt.jpg';
-import image35 from '../assets/espy.jpg';
-import image36 from '../assets/mariam.png';
-
+import prez_acm from '../assets/acmBoard/chris.jpg';
+import vp_acm from '../assets/acmBoard/rayyan.jpg';
+import wc_acm from '../assets/acmBoard/espy.jpg';
+import web_acm from '../assets/acmBoard/neelasha.jpg';
+import oc_acm from '../assets/acmBoard/sunjana.jpg';
+import tres_acm from '../assets/acmBoard/carys.jpg';
+import mc_acm from '../assets/acmBoard/lauren.jpg';
+import il1_acm from '../assets/acmBoard/puneet.jpg';
+import il2_acm from '../assets/acmBoard/ashwini.jpg';
+import sec_acm from '../assets/acmBoard/mariam.jpg';
+import hc_acm from '../assets/acmBoard/ahbi.jpg';
 
 const boardMembers = [
   { name: 'Maddie Follosco', role: 'President', image: image6 },
@@ -53,20 +49,17 @@ const boardMembers = [
 // Placeholder section: add your imports above (e.g. import imageXX from '../assets/Name.jpg') and replace null with the variable
 const PLACEHOLDER_IMAGE = 'https://via.placeholder.com/220';
 const boardMembersSecondary = [
-  { name: 'Jake Esperson', role: 'President', image: image23 },
-  { name: 'Anish Katragadda', role: 'Vice President', image: image24 },
-  { name: 'Abhinav Ala', role: 'Workshop Coordinator', image: image25 },
-  { name: 'Ivy Zhuang', role: 'Webmaster', image: image26 },
-  { name: 'Lindsey Leong', role: 'Outreach Coordinator', image: image27 },
-  { name: 'Chris Shobe', role: 'Treasurer', image: image28 },
-  { name: 'Margarita Schemel', role: 'Social Media Manager', image: image29 },
-  { name: 'Carys Chiu', role: 'Industry Liaison', image: image30 },
-  { name: 'Alan Fung', role: 'Industry Liaison', image: image31 },
-  { name: 'Tiffany Le', role: 'Secretary', image: image32 },
-  { name: 'Rayyan Hussain', role: 'Hackathon Coordinator', image: image33 },
-  { name: 'Matthias Masiera', role: 'Event Coordinator', image: image34 },
-  { name: 'Esperanza Aguilar', role: 'Underclassmen Representative', image: image35 },
-  { name: 'Mariam Shihab', role: 'Underclassmen Representative', image: image36 },
+  { name: 'Chris Shobe', role: 'President', image: prez_acm },
+  { name: 'Rayyan Hussain', role: 'Vice President', image: vp_acm },
+  { name: 'Esperanza Aguilar', role: 'Workshop Coordinator', image: wc_acm },
+  { name: 'Neelasha Sudarshan', role: 'Webmaster', image: web_acm },
+  { name: 'Sunjana Banwait', role: 'Outreach Coordinator', image: oc_acm },
+  { name: 'Carys Chiu', role: 'Treasurer', image: tres_acm },
+  { name: 'Lauren Kimura', role: 'Marketing Coordinator', image: mc_acm },
+  { name: 'Puneet Gella', role: 'Industry Liaison', image: il1_acm },
+  { name: 'Ashwini Anantharaman', role: 'Industry Liaison', image: il2_acm },
+  { name: 'Mariam Shihab', role: 'Secretary', image: sec_acm },
+  { name: 'Abhinav Ala', role: 'Hackathon Coordinator', image: hc_acm },
 ];
 
 const Board = () => {
