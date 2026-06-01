@@ -43,7 +43,7 @@ const boardMembers = [
 // Placeholder section: add your imports above (e.g. import imageXX from '../assets/Name.jpg') and replace null with the variable
 const PLACEHOLDER_IMAGE = 'https://via.placeholder.com/220';
 const boardMembersSecondary = [
-  { name: 'Chris Shobe', role: 'anPresident', image: prez_acm },
+  { name: 'Chris Shobe', role: 'President', image: prez_acm },
   { name: 'Rayyan Hussain', role: 'Vice President', image: vp_acm },
   { name: 'Esperanza Aguilar', role: 'Workshop Coordinator', image: wc_acm },
   { name: 'Neelasha Sudarshan', role: 'Webmaster', image: web_acm },
