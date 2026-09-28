@@ -14,15 +14,13 @@ import il1_acmw from '../assets/acmwBoard/anvita.png'; //IL 1
 import il2_acmw from '../assets/acmwBoard/Priyanka_Burra.jpg'; //IL 2
 import image20 from '../assets/meettheboardbanner.png';
 import prez_acm from '../assets/acmBoard/chris.jpg';
-import vp_acm from '../assets/acmBoard/rayyan.jpg';
-import wc_acm from '../assets/acmBoard/espy.jpg';
+import vp_acm from '../assets/acmBoard/espy.jpg';
+import wc_acm from '../assets/acmBoard/lauren.jpg';
 import web_acm from '../assets/acmBoard/neelasha.jpg';
 import oc_acm from '../assets/acmBoard/sunjana.jpg';
 import tres_acm from '../assets/acmBoard/carys.jpg';
-import mc_acm from '../assets/acmBoard/lauren.jpg';
 import il1_acm from '../assets/acmBoard/puneet.jpg';
 import il2_acm from '../assets/acmBoard/ashwini.jpg';
-import sec_acm from '../assets/acmBoard/mariam.jpg';
 import hc_acm from '../assets/acmBoard/ahbi.jpg';
 
 const boardMembers = [
@@ -30,12 +28,12 @@ const boardMembers = [
   { name: 'Sara Donnelley', role: 'Vice President', image: vp_acmw },
   { name: 'Shrimayi Sinkar babu Bharathy', role: 'Secretary', image: sec_acmw },
   { name: 'Priyanjal Poswal', role: 'Treasurer', image: tres_acmw },
-  { name: 'Paulina Landry', role: 'Web-Master', image: web_acmw },
+  { name: 'Paulina Landry', role: 'Webmaster', image: web_acmw },
   { name: 'Leslie Mejia', role: 'Director of Media and PR', image: pr_acmw },
   { name: 'Tanvi Gandhi', role: 'Technical Events Coordinator', image: tc_acmw },
   { name: 'Daniela Casillas', role: 'Social Events Coordinator', image: soc_acmw },
   { name: 'Faith Ogunfunmi', role: 'Conference/Career Strategist', image: con_acmw },
-  { name: 'Kaavya Jethwa', role: 'Hack-a-thon Coordinator', image: hc_acmw },
+  { name: 'Kaavya Jethwa', role: 'Hackathon Coordinator', image: hc_acmw },
   { name: 'Anvita Buddhavaram', role: 'Industry Liaison', image: il1_acmw },
   { name: 'Priyanka Burra', role: 'Industry Liaison', image: il2_acmw },
 ];
@@ -44,16 +42,14 @@ const boardMembers = [
 const PLACEHOLDER_IMAGE = 'https://via.placeholder.com/220';
 const boardMembersSecondary = [
   { name: 'Chris Shobe', role: 'President', image: prez_acm },
-  { name: 'Rayyan Hussain', role: 'Vice President', image: vp_acm },
-  { name: 'Esperanza Aguilar', role: 'Workshop Coordinator', image: wc_acm },
-  { name: 'Neelasha Sudarshan', role: 'Webmaster', image: web_acm },
-  { name: 'Sunjana Banwait', role: 'Outreach Coordinator', image: oc_acm },
+  { name: 'Esperanza Aguilar', role: 'Vice President', image: vp_acm },
   { name: 'Carys Chiu', role: 'Treasurer', image: tres_acm },
-  { name: 'Lauren Kimura', role: 'Marketing Coordinator', image: mc_acm },
+  { name: 'Lauren Kimura', role: 'Workshop Coordinator', image: wc_acm },
+  { name: 'Sunjana Banwait', role: 'Outreach Coordinator', image: oc_acm },
+  { name: 'Abhinav Ala', role: 'Hackathon Coordinator', image: hc_acm },
   { name: 'Puneet Gella', role: 'Industry Liaison', image: il1_acm },
   { name: 'Ashwini Anantharaman', role: 'Industry Liaison', image: il2_acm },
-  { name: 'Mariam Shihab', role: 'Secretary', image: sec_acm },
-  { name: 'Abhinav Ala', role: 'Hackathon Coordinator', image: hc_acm },
+  { name: 'Neelasha Sudarshan', role: 'Webmaster', image: web_acm },
 ];
 
 const Board = () => {
@@ -62,7 +58,7 @@ const Board = () => {
       <div className="banner">
         <img src={image20} alt="Board banner" className="banner-image" />
         <div className="banner-title">
-          <h1 className="board-title">2025-2026</h1>
+          <h1 className="board-title">2026-2027</h1>
         </div>
       </div>
       
