@@ -11,7 +11,7 @@ const MailchimpForm = () => {
       <form
         action="https://facebook.us17.list-manage.com/subscribe/post?u=fdde31514ee30327007146546&amp;id=e3ac79e8a9&amp;f_id=00cec9e3f0"
         method="post"
-        target="_blank"
+        target="_self"
         noValidate
       >
         <h2>Subscribe to Our Newsletter!</h2>
