@@ -3,7 +3,7 @@ import './Board.css';
 import prez_acmw from '../assets/acmwBoard/arya.jpg'; //President
 import vp_acmw from '../assets/acmwBoard/sara.jpg'; //Vice President
 import pr_acmw from '../assets/acmwBoard/leslie.jpeg'; //Director of Media and PR
-import hc_acmw from '../assets/acmwBoard/kaavya.jpg'; //hackathon coordinator
+import hc_acmw from '../assets/acmwBoard/kaavya.png'; //hackathon coordinator
 import tc_acmw from '../assets/acmwBoard/tanvi.jpg'; //technical events coordinator
 import web_acmw from '../assets/acmwBoard/paulina.jpg'; // web master
 import soc_acmw from '../assets/acmwBoard/daniela.jpg'; // social events coordinator
