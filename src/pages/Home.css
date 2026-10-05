@@ -462,6 +462,26 @@ body {
   color: #5F4B8B;
 }
 
+.applybutton {
+  text-decoration: none;
+  background-color: #5F4B8B;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: 'Montserrat Alternates', sans-serif;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+.applybutton a{
+  text-decoration:none;
+  color:white;
+}
+
+.applybutton:hover {
+  background-color: #CCCCFF;
+}
+
 /* Responsive Design */
 @media (max-width: 1024px) {
   .header {

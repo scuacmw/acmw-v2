@@ -68,8 +68,8 @@ const Home = () => {
       <div ref={eventsRef} className="upcomingeventbox">
         <h1>UPCOMING EVENT</h1>
         <div className="info">
-          <p>Portfolio Project Workshop</p>
-          <p>Wednesday, September 30th</p>
+          <p>NVIDIA Speaker</p>
+          <p>Wednesday, October 7th</p>
           <p>Location: Kenna 102</p>
         </div>
         <img src={image6} alt="upcoming event" className="upcomingimage" />
@@ -78,7 +78,9 @@ const Home = () => {
          <h1>FRESHMAN REP APPLICATION</h1>
           <div className="info">
           <p><br></br>Deadline: Friday, October 14th</p>
-          <a href="https://forms.gle/PufiniYLsxm1q4ZY7" target="_blank" rel="noopener noreferrer">Apply Here</a>
+          <button className="applybutton">
+            <a href="https://forms.gle/PufiniYLsxm1q4ZY7" target="_blank" rel="noopener noreferrer">Apply Here</a>
+          </button>
         </div>
         <img src={image7} alt="Freshman Rep Application" className="upcomingimage" />
       </div>
