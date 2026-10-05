@@ -4,7 +4,8 @@ import image2 from '../assets/boardpic.png';
 import image3 from '../assets/h4hPhoto1.jpg';
 import image4 from '../assets/groupPic1.jpeg';
 import image5 from '../assets/acmAcmwPhoto.jpeg';
-import image6 from '../assets/event.png';
+import image6 from '../assets/event.jpg';
+import image7 from '../assets/freshmanRep.png';
 import React, { useRef } from 'react';
 
 const ADD_TO_GCAL_LINK = 'https://calendar.google.com/calendar/u/1?cid=YWNtdy5zY3VnaXJsc0BnbWFpbC5jb20';
@@ -65,14 +66,25 @@ const Home = () => {
       </div>
 
       <div ref={eventsRef} className="upcomingeventbox">
-        <h1>UPCOMING EVENTS</h1>
+        <h1>UPCOMING EVENT</h1>
         <div className="info">
-          <p>Portfolio Project Workshop</p>
-          <p>Wednesday, September 30th</p>
+          <p>NVIDIA Speaker</p>
+          <p>Wednesday, October 7th</p>
           <p>Location: Kenna 102</p>
         </div>
         <img src={image6} alt="upcoming event" className="upcomingimage" />
       </div>
+      <div ref={eventsRef} className="upcomingeventbox">
+         <h1>FRESHMAN REP APPLICATION</h1>
+          <div className="info">
+          <p><br></br>Deadline: Friday, October 14th</p>
+          <button className="applybutton">
+            <a href="https://forms.gle/PufiniYLsxm1q4ZY7" target="_blank" rel="noopener noreferrer">Apply Here</a>
+          </button>
+        </div>
+        <img src={image7} alt="Freshman Rep Application" className="upcomingimage" />
+      </div>
+
 
     <div ref={aboutUsRef} className="title"><h1>About Us</h1></div>
   <div className="about-us">
