@@ -197,7 +197,8 @@ body {
 
 .upcomingeventbox{
   width: 90%;
-  height: 40vh; 
+  min-height: 40vh; 
+  gap: 1rem;
   display: flex; 
   justify-content: center;
   align-items: center;
