@@ -4,13 +4,15 @@ import './boardPopup.css';
 const BoardPopup = ({ member, onClose }) => {
     //close on escape + lock the backdrop
     useEffect(() => {
+        if (!member) return;
         const onKeyDown = (e) => e.key === 'Escape' && onClose();
         document.addEventListener('keydown', onKeyDown);
+        document.body.style.overflow = 'hidden';
         return () => {
             document.removeEventListener('keydown', onKeyDown);
             document.body.style.overflow = '';
         };
-    }, [onClose]);
+    }, [member, onClose]);
 
     //check to see if worked 
     if(!member) return null;
