@@ -1,5 +1,6 @@
 import React from 'react';
 import './Board.css';
+import BoardPopup from './boardPopup';
 import prez_acmw from '../assets/acmwBoard/arya.jpg'; //President
 import vp_acmw from '../assets/acmwBoard/sara.jpg'; //Vice President
 import pr_acmw from '../assets/acmwBoard/leslie.jpeg'; //Director of Media and PR
@@ -221,6 +222,7 @@ const boardMembersSecondary = [
 ];
 
 const Board = () => {
+  const [selectedMember, setSelectedMember] = React.useState(null);
   return (
     <div className="board-page">
       <div className="banner">
@@ -232,7 +234,10 @@ const Board = () => {
 
       <div className="members-container">
         {boardMembers.map((member, index) => (
-          <div key={index} className="member-card">
+          <div key={index} className="member-card"
+            onClick={() => setSelectedMember(member)}
+            style={{ cursor: 'pointer' }}
+          >
             <div className="member-image-frame">
               <img src={member.image} alt={member.name} className="member-image" />
             </div>
@@ -246,7 +251,11 @@ const Board = () => {
         <h2 className="board-section-title">ACM Board</h2>
         <div className="members-container">
           {boardMembersSecondary.map((member, index) => (
-            <div key={index} className="member-card">
+            <div key={index} className="member-card"
+              onClick={() => setSelectedMember(member)}
+              style={{ cursor: 'pointer' }}
+            >
+            
               <div className="member-image-frame">
                 <img
                   src={member.image || PLACEHOLDER_IMAGE}
@@ -260,6 +269,7 @@ const Board = () => {
           ))}
         </div>
       </section>
+      <BoardPopup member={selectedMember} onClose={() => setSelectedMember(null)} />
     </div>
   );
 };
