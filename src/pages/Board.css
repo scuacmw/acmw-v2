@@ -74,6 +74,12 @@
     flex: 0 0 calc(25% - 23px);
     max-width: calc(25% - 23px);
     min-width: 250px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.member-card:active {
+    transform:scale(0.98);
 }
 
 .member-image-frame {
@@ -202,5 +208,12 @@
     
     .member-role {
         font-size: 14px;
+    }
+}
+
+@media(hover: hover) {
+    .member-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 16px rgba(95, 75, 139, 0.3);
     }
 }
