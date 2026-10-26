@@ -1,3 +1,8 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@500&display=swap");
+
+body {
+  font-family: "Montserrat Alternates", sans-serif;
+}
 .popup-overlay {
   position: fixed;
   top: 0;
@@ -11,11 +16,73 @@
   z-index: 1000;
 }
 .popup-window {
-  background: #fff;
+  background: #e6f2fb;
   border-radius: 8px;
   width: 90%;
   max-width: 600px;
   max-height: 90vh;
   overflow: auto;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 14px 14px 0 0 #5f4b8b;
+}
+
+.popup-titlebar {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 16px;
+  gap: 10px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.popup-dot {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  /*one dot different color each*/
+  background: #ccccff;
+}
+
+.popup-dot:nth-child(2) {
+  background: #ffbd2e;
+}
+.popup-dot:nth-child(3) {
+  background: #27c93f;
+}
+.popup-dot-close {
+  background: #ff5f56;
+}
+.popup-body {
+  padding: 2rem;
+  overflow-y: auto;
+  text-align: center;
+}
+
+.popup-image {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  padding: 5px;
+  box-sizing: border-box;
+  background: white;
+  border: 5px solid #5f4b8b;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto 15px;
+}
+
+.popup-bio {
+  border: 3px solid #5f4b8b;
+  border-radius: 8px;
+  background: #ffffff;
+}
+
+.popup-name {
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.popup-role {
+  font-size: 1rem;
+  margin: 0 0 1rem 0;
+  color: #5f4b8b;
 }
