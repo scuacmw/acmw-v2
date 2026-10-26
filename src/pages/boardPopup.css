@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@500&display=swap");
+
+body {
+  font-family: "Montserrat Alternates", sans-serif;
+}
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+.popup-window {
+  background: #e6f2fb;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 600px;
+  max-height: 90vh;
+  overflow: auto;
+  box-shadow: 14px 14px 0 0 #5f4b8b;
+}
+
+.popup-titlebar {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 16px;
+  gap: 10px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.popup-dot {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: none;
+  padding: 0;
+  background: #ccccff;
+}
+
+.popup-dot:nth-child(2) {
+  background: #ffbd2e;
+}
+.popup-dot:nth-child(3) {
+  background: #27c93f;
+}
+.popup-dot-close {
+  background: #ff5f56;
+  position: relative;
+  cursor: pointer;
+  appearance: none;
+  -webkit-appearance: none;
+}
+
+.popup-dot-close::after {
+  font-family: Arial, sans-serif;
+  content: "×";
+  position: absolute;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 18px;
+  line-height: 1;
+  transition: opacity 0.15s;
+}
+
+.popup-body {
+  padding: 2rem;
+  overflow-y: auto;
+  text-align: center;
+}
+
+.popup-image {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  padding: 5px;
+  box-sizing: border-box;
+  background: white;
+  border: 5px solid #5f4b8b;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto 15px;
+}
+
+.popup-bio {
+  border: 3px solid #5f4b8b;
+  border-radius: 8px;
+  background: #ffffff;
+}
+
+.popup-name {
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.popup-role {
+  font-size: 1rem;
+  margin: 0 0 1rem 0;
+  color: #5f4b8b;
+}
+
+@media (hover: hover) {
+  .popup-dot-close::after {
+    opacity: 0;
+  }
+
+  .popup-dot-close:hover::after,
+  .popup-dot-close:focus-visible::after,
+  .popup-titlebar:hover .popup-dot-close::after {
+    opacity: 1;
+  }
+}
