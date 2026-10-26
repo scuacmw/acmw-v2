@@ -38,7 +38,8 @@ body {
   width: 20px;
   height: 20px;
   border-radius: 50%;
-  /*one dot different color each*/
+  border: none;
+  padding: 0;
   background: #ccccff;
 }
 
@@ -50,7 +51,26 @@ body {
 }
 .popup-dot-close {
   background: #ff5f56;
+  position: relative;
+  cursor: pointer;
+  appearance: none;
+  -webkit-appearance: none;
 }
+
+.popup-dot-close::after {
+  font-family: Arial, sans-serif;
+  content: "×";
+  position: absolute;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 18px;
+  line-height: 1;
+  transition: opacity 0.15s;
+}
+
 .popup-body {
   padding: 2rem;
   overflow-y: auto;
@@ -85,4 +105,16 @@ body {
   font-size: 1rem;
   margin: 0 0 1rem 0;
   color: #5f4b8b;
+}
+
+@media (hover: hover) {
+  .popup-dot-close::after {
+    opacity: 0;
+  }
+
+  .popup-dot-close:hover::after,
+  .popup-dot-close:focus-visible::after,
+  .popup-titlebar:hover .popup-dot-close::after {
+    opacity: 1;
+  }
 }
