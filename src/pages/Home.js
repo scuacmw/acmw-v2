@@ -4,7 +4,8 @@ import image2 from '../assets/boardpic.png';
 import image3 from '../assets/h4hPhoto1.jpg';
 import image4 from '../assets/groupPic1.jpeg';
 import image5 from '../assets/acmAcmwPhoto.jpeg';
-import image6 from '../assets/LEETCODE.png';
+import image6 from '../assets/Cybersister (1).png';
+import image7 from '../assets/murder_myster_1.png';
 import React, { useRef } from 'react';
 
 const ADD_TO_GCAL_LINK = 'https://calendar.google.com/calendar/u/1?cid=YWNtdy5zY3VnaXJsc0BnbWFpbC5jb20';
@@ -67,12 +68,23 @@ const Home = () => {
       <div ref={eventsRef} className="upcomingeventbox">
         <h1>UPCOMING EVENT</h1>
         <div className="info">
-          <p>Leetcode Competition</p>
-          <p>Wednesday, November 4th</p>
+          <p>Murder Mystery</p>
+          <p>Wednesday, November 11th</p>
           <p>Location: Kenna 102</p>
         </div>
         <img src={image6} alt="upcoming event" className="upcomingimage" />
       </div>
+
+       <div ref={eventsRef} className="upcomingeventbox">
+        <h1>SIGN UP</h1>
+        <div className="info">
+          <p>Cybersisters Mentorship Program</p>
+          <p>Year-round Mentorship!</p>
+          <p>Scan the QR code to sign up!</p>
+        </div>
+        <img src={image7} alt="upcoming event" className="upcomingimage" />
+      </div>
+
 
 
     <div ref={aboutUsRef} className="title"><h1>About Us</h1></div>
