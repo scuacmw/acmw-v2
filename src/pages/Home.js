@@ -72,7 +72,7 @@ const Home = () => {
           <p>Wednesday, November 11th</p>
           <p>Location: Kenna 102</p>
         </div>
-        <img src={image6} alt="upcoming event" className="upcomingimage" />
+        <img src={image7} alt="upcoming event" className="upcomingimage" />
       </div>
 
        <div ref={eventsRef} className="upcomingeventbox">
@@ -82,7 +82,7 @@ const Home = () => {
           <p>Year-round Mentorship!</p>
           <p>Scan the QR code to sign up!</p>
         </div>
-        <img src={image7} alt="upcoming event" className="upcomingimage" />
+        <img src={image6} alt="upcoming event" className="upcomingimage" />
       </div>
 
 
